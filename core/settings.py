@@ -3,6 +3,9 @@ from pathlib import Path
 import os
 import environ
 
+#NPM RUTA TAILWIND 
+NPM_BIN_PATH = r"C:\Program Files\nodejs\npm.cmd"
+
 env = environ.Env()  # Variable para poder crear variables 
 environ.Env.read_env()  # Para poder leer las variables 
 
@@ -35,6 +38,14 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'core',
     'blog',
+    'tailwind',
+    'theme',
+]
+
+TAILWIND_APP_NAME = 'theme'
+
+INTERNAL_IPS = [
+    "127.0.0.1",
 ]
 
 MIDDLEWARE = [
